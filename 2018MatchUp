@@ -9,6 +9,8 @@ e. 비지도 학습: 군집화와 차원축소
 
 b. 머신러닝을 위한 선형대수와 최적화
 
+머신러닝을 위한 선형대수 이해 및 활용(1)
+
 Linear Algebra 선형대수
 - 행렬, 벡터, 내적, 벡터크기(norm)
 - 선형변환, 고유치 문제
@@ -17,3 +19,19 @@ Linear Algebra 선형대수
 Optimization 최적화
 - convex optimization -> CVXPY module
 - 경사 하강법 gradient descent
+
+선형 연립 방정식
+- 연립 방정식을 역행렬을 이용해 표현할 수 있음(역행렬이 존재하는 경우)
+- 차원이 확장되어도(고차원) 간결한 모양으로 나타낼 수 있음
+
+행렬/벡터 곱
+- vector: 방향과 크기를 모두 포함. 표기는 문자 위 화살표(→) c.f., scalar: 크기만 의미
+- 강의에서는 column vector로 표현 통일
+- vector*vector: inner product 내적
+  - 둘 다 column vector라면 한 행렬을 transpose
+  - 각 scalar를 더한 형태가 됨
+- column vector 열벡터 & row vector 행벡터
+  - 2*2로 이루어진 일반 행렬도 row, column vector로 표현할 수 있음
+- 행렬과 벡터의 곱
+  - row vector: each entry of Ax is an inner product between x and a row of A
+  - column vector: Ax is a linear combination of the columns of A, with coefficients given(x가 Ax의 weight에 대한 정보를 갖고 있음)
