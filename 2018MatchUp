@@ -20,11 +20,11 @@ Optimization 최적화
 - convex optimization -> CVXPY module
 - 경사 하강법 gradient descent
 
-선형 연립 방정식
+1. 선형 연립 방정식
 - 연립 방정식을 역행렬을 이용해 표현할 수 있음(역행렬이 존재하는 경우)
 - 차원이 확장되어도(고차원) 간결한 모양으로 나타낼 수 있음
 
-행렬/벡터 곱
+2. 행렬/벡터 곱
 - vector: 방향과 크기를 모두 포함. 표기는 문자 위 화살표(→) c.f., scalar: 크기만 의미
 - 강의에서는 column vector로 표현 통일
 - vector*vector: inner product 내적
@@ -35,3 +35,25 @@ Optimization 최적화
 - 행렬과 벡터의 곱
   - row vector: each entry of Ax is an inner product between x and a row of A
   - column vector: Ax is a linear combination of the columns of A, with coefficients given(x가 Ax의 weight에 대한 정보를 갖고 있음)
+
+3. 벡터의 크기
+- scalar는 크기. 원점에서의 거리 e.g.,|2| = 2, |-3| = 3
+- norms: ||x|| measures length of vector from origin. vector의 크기
+  - 거리를 나타내는 두 가지 정의가 있음
+    - L2 norm: 유클리디안 공간에서 최단거리(대각선. 피타고라스 정리). n차원으로 확장된 거리 
+    - L1 norm: 각각 거리를 모두 더한 것. e.g., 바둑판에서 a지점까지 가는 방법
+- orthogonality 직교성
+  - 두 벡터의 곱 xy = 0(x는 transpose)이라면 orthogonal. inner product가 0이기 때문
+  - xy = 0이고, ||x|| = ||y|| = 1이라면(각각의 크기가 1) orthonormal
+- 두 벡터 사이의 각도
+  - xy = ||x|| cos𝜃 ||y||
+    cos𝜃 = xy / ||x||*||y||
+  - n 차원으로 확장해도 같은 방식으로 사이각𝜃를 구할 수 있음
+  - 사이각을 안다는 것은,
+    - xy = 0이라면(y given), x가 y에 직교하는 곳에 분포한다는 것(orthogonal)
+    - xy <= 0이라면, y가 향하는 곳의 뒤쪽 부분(작은 쪽)에 분포
+    - 즉, 공간을 분리할 수 있음. half space
+
+  
+  𝜃
+  
