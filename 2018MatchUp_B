@@ -1,5 +1,6 @@
-prof. 이승철 POSTECH
+by prof. 이승철(포항공과대학교 기계공학과)
 
+MatchUp Series
 a. 머신러닝을 위한 파이썬 기초
 b. 머신러닝을 위한 선형대수와 최적화
 c. 지도학습: 회귀
@@ -52,8 +53,4 @@ Optimization 최적화
   - 사이각을 안다는 것은,
     - xy = 0이라면(y given), x가 y에 직교하는 곳에 분포한다는 것(orthogonal)
     - xy <= 0이라면, y가 향하는 곳의 뒤쪽 부분(작은 쪽)에 분포
-    - 즉, 공간을 분리할 수 있음. half space
-
-  
-  𝜃
-  
+    - 즉, 공간을 분리할 수 있음-> half space
